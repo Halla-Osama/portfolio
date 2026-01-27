@@ -1,0 +1,100 @@
+.card {
+  display: flex;      
+  flex-direction: column;
+  padding: 15px;
+  background: linear-gradient(#6a158f, #be5050);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 550px;
+  box-shadow: 0 4px 8px rgba(138, 4, 248, 0.938);
+  margin: 50px auto;
+  padding-bottom: 20px;
+  
+}
+.card h3 {
+  margin-bottom: 0;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 45px;
+  white-space: nowrap;
+  margin-left: 35px;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.card .icons img:hover {
+  transform: scale(1.1);
+  justify-content: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+/* .card .icons img{
+    filter: brightness(0) invert(1);
+} */
+.card .mypic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  margin-top: 10px;
+  border: solid 3px white;
+}
+.text::before {
+  content: attr(data-toletip);
+  background-color: rgb(81, 81, 81);
+  padding: 19px;
+  border-radius: 51px;
+  opacity: 0;
+  transition: 0.2s;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.text:hover::before {
+  opacity: 100%;
+}
+.card .icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background: rgba(255, 254, 254, 0.5);  
+  border-radius: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;  
+  justify-content: space-around;
+
+}
+
+.card .discription {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-left: 25px;
+
+}
+.name {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+ margin-bottom: 0cm;
+ margin-right: 15px;
+}
+.intro {
+  text-align: center;
+  display: flex;
+
+}
+.hobbies {
+  margin-top: 30px;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);  
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
